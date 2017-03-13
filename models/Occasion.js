@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 var occasionSchema = new mongoose.Schema({
   title: {type: String, required: true},
   description: String,
+  location: String,
+  category: String,
   eventDate: Date,
   users: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
   groups: [{type: mongoose.Schema.Types.ObjectId, ref: 'Group'}]
