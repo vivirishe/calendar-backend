@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 // Load env variables from .env file
-// require('dotenv').config();
+require('dotenv').config();
 
 //variables for routes file
 var index = require('./routes/index');
