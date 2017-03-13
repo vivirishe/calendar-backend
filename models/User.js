@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var userSchema = new mongoose.Schema({
   name: {type: String, required: true},
   email: {type: String, required: true, unique: true},
-  events: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Event'}],
+  occasions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Occasion'}],
   groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Group'}]
 });
 
